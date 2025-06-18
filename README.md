@@ -1,28 +1,40 @@
-📄 File Integrity Checker
-A simple and practical Python GUI tool to monitor file integrity. It uses SHA-256 hashing to detect any changes in files and ensures they remain untouched.
+# 📄 File Integrity Checker
 
-🚀 Features
-Add and track multiple files
+A simple and practical Python GUI tool to **monitor file integrity**.  
+It uses SHA-256 hashing to detect changes in files and ensure they haven’t been tampered with.
 
-Calculate and compare file hashes
+---
 
-Detect modified or missing files
+## 🚀 Features
 
-Save and load hash records (.json)
+- Add and track multiple files
+- Calculate and compare file hashes
+- Detect modified or missing files
+- Save and load hash records (`.json`)
+- User-friendly interface built with Tkinter
 
-User-friendly interface built with Tkinter
+---
 
-🛠️ Requirements
-Python 3.7+
+## 🛠️ Requirements
 
-tkinter (comes with Python)
+- Python 3.7 or higher
+- `tkinter` (included with most Python distributions)
+- Uses built-in libraries: `hashlib`, `json`, `os`
 
-No extra modules needed (uses built-in hashlib and json)
+---
 
-🧪 How It Works
-Add files you want to monitor.
+## 🧪 How It Works
 
-The app calculates and stores SHA-256 hashes.
+1. Select files you want to monitor.
+2. The tool calculates SHA-256 hashes for those files.
+3. When you recheck, it compares current file hashes with stored ones.
+4. It notifies you if any file has been modified or is missing.
 
-You can later recheck the integrity — it will tell you if a file is changed or missing.
+---
 
+## 📦 Usage
+
+### Run the app
+
+```bash
+python file_integrity_checker.py
